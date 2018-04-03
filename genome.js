@@ -23,13 +23,13 @@ function solution(S, P, Q) {
     }
 
     for (var i = 0; i < P.length; i++) {
-        if(prefA[Q[i] +1] > prefA[P[i] + 1]) {
+        if(prefA[Q[i] +1] > prefA[P[i]]) {
             impacts.push(1);
-        } else if (prefC[Q[i] + 1] > prefC[P[i] + 1]) {
+        } else if (prefC[Q[i] + 1] > prefC[P[i]]) {
             impacts.push(2);
-        } else if (prefG[Q[i] + 1] > prefG[P[i] + 1]) {
+        } else if (prefG[Q[i] + 1] > prefG[P[i]]) {
             impacts.push(3);
-        } else if (prefT[Q[i] + 1] > prefT[P[i] + 1]) {
+        } else if (prefT[Q[i] + 1] > prefT[P[i]]) {
             impacts.push(4);
         } else if (P[i] === Q[i]) {
             if (S[P[i]] === 'A') {
